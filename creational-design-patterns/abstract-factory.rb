@@ -6,6 +6,8 @@
 # distinct products but leaves the actual product creation 
 # to concrete factory classes. Each factory type corresponds to a certain product variety.
 
+# Abstract Factory classes are often based on a set of Factory Methods,
+
 class AbstractFactory
   def name
     raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
